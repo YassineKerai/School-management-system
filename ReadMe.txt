@@ -29,3 +29,6 @@ Acknowledgments:
 Qt documentaion
 Stack Overflow
 Chatgpt (it help me to know the syntax of some function or to know some function of coverting... not to generates the code)
+
+Contact:
+you can contact me via the email yacinekerai1@gmail.com
