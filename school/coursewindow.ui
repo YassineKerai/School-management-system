@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>coursewindow</class>
+ <widget class="QMainWindow" name="coursewindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>656</width>
+    <height>421</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(173, 173, 173);
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item alignment="Qt::AlignHCenter">
+     <widget class="QPushButton" name="pushButton_6">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>216</width>
+        <height>35</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>24</height>
+       </size>
+      </property>
+      <property name="sizeIncrement">
+       <size>
+        <width>300</width>
+        <height>100</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 900 11pt &quot;Segoe UI Black&quot;;
+border-radius: 15px;
+margin-left: 10px; border-radius: 15px; background: #282d7c; color: #4A0C46;
+background-color: rgb(40, 45, 124);
+background-color: rgb(76, 78, 156);
+color : white;
+ border-style: outset;
+     border-width: 2px;
+     border-radius: 15px;
+     border-color: beige;
+     font: bold 14px;
+     min-width: 10em;
+     padding: 6px;</string>
+      </property>
+      <property name="text">
+       <string>School managment system</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>20</width>
+        <height>16</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="verticalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QLabel" name="QTotalC">
+      <property name="styleSheet">
+       <string notr="true">font: 700 18pt &quot;Perpetua&quot;;
+color: rgb(162, 0, 0);</string>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="verticalSpacer">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="styleSheet">
+         <string notr="true">font: 700 18pt &quot;Perpetua&quot;;
+color: rgb(162, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>List of courses</string>
+        </property>
+       </widget>
+      </item>
+      <item alignment="Qt::AlignRight">
+       <widget class="QComboBox" name="comboBox">
+        <property name="styleSheet">
+         <string notr="true">border-color: rgb(255, 197, 115);
+font: 900 11pt &quot;Segoe UI Black&quot;;
+border-radius: 5px;
+margin-left: 10px; border-radius: 15px; background: #282d7c; color: #4A0C46;
+color : white;
+ border-style: outset;
+     border-width: 2px;
+     border-radius: 10px;
+     border-color: beige;
+     font: bold 14px;
+     min-width: 2em;
+     padding: 6px;</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>all</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>1</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>3</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>4</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>5</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QTableWidget" name="tableWidget">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(175, 198, 192);
+font: 600 11pt &quot;Segoe UI Semibold&quot;;</string>
+      </property>
+      <property name="editTriggers">
+       <set>QAbstractItemView::NoEditTriggers</set>
+      </property>
+      <column>
+       <property name="text">
+        <string>course</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>15</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="foreground">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>197</red>
+          <green>27</green>
+          <blue>30</blue>
+         </color>
+        </brush>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>year</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>15</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="foreground">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>197</red>
+          <green>27</green>
+          <blue>30</blue>
+         </color>
+        </brush>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>coef</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>15</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="foreground">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>197</red>
+          <green>27</green>
+          <blue>30</blue>
+         </color>
+        </brush>
+       </property>
+      </column>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLineEdit" name="search">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="searchButton">
+        <property name="styleSheet">
+         <string notr="true"> border-style: outset;
+     border-width: 1.5px;
+     border-radius: 10px;
+     border-color: beige;
+     font: bold 4px;
+     min-width: 2em;
+     padding: 6px;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>228</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="add_button">
+        <property name="styleSheet">
+         <string notr="true">font: 900 11pt &quot;Segoe UI Black&quot;;
+border-radius: 15px;
+margin-left: 10px; border-radius: 15px; background: rgba(49, 45, 52, 253); color: #4A0C46;
+color : white;
+ border-style: outset;
+     border-width: 2px;
+     border-radius: 15px;
+     border-color: beige;
+     font: bold 13px;
+     min-width: 4em;
+     padding: 5px;</string>
+        </property>
+        <property name="text">
+         <string>add/edit</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="remove_button">
+        <property name="styleSheet">
+         <string notr="true">font: 900 11pt &quot;Segoe UI Black&quot;;
+border-radius: 15px;
+margin-left: 10px; border-radius: 15px; background: rgba(49, 45, 52, 253); color: #4A0C46;
+color : white;
+ border-style: outset;
+     border-width: 2px;
+     border-radius: 15px;
+     border-color: beige;
+     font: bold 13px;
+     min-width: 4em;
+     padding: 5px;</string>
+        </property>
+        <property name="text">
+         <string>remove</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="view_button">
+        <property name="styleSheet">
+         <string notr="true">font: 900 11pt &quot;Segoe UI Black&quot;;
+border-radius: 15px;
+margin-left: 10px; border-radius: 15px; background: rgba(49, 45, 52, 253); color: #4A0C46;
+color : white;
+ border-style: outset;
+     border-width: 2px;
+     border-radius: 15px;
+     border-color: beige;
+     font: bold 13px;
+     min-width: 4em;
+     padding: 5px;</string>
+        </property>
+        <property name="text">
+         <string>view</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

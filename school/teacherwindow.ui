@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>teacherwindow</class>
+ <widget class="QMainWindow" name="teacherwindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>619</width>
+    <height>413</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(173, 173, 173);
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item alignment="Qt::AlignHCenter">
+     <widget class="QPushButton" name="pushButton_6">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>216</width>
+        <height>35</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>24</height>
+       </size>
+      </property>
+      <property name="sizeIncrement">
+       <size>
+        <width>300</width>
+        <height>100</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 900 11pt &quot;Segoe UI Black&quot;;
+border-radius: 15px;
+margin-left: 10px; border-radius: 15px; background: #282d7c; color: #4A0C46;
+background-color: rgb(40, 45, 124);
+background-color: rgb(76, 78, 156);
+color : white;
+ border-style: outset;
+     border-width: 2px;
+     border-radius: 15px;
+     border-color: beige;
+     font: bold 14px;
+     min-width: 10em;
+     padding: 6px;</string>
+      </property>
+      <property name="text">
+       <string>School managment system</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>20</width>
+        <height>16</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="verticalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QLabel" name="QTotalT">
+      <property name="styleSheet">
+       <string notr="true">font: 700 18pt &quot;Perpetua&quot;;
+color: rgb(162, 0, 0);</string>
+      </property>
+      <property name="text">
+       <string>Total techchers: </string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="verticalSpacer">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="styleSheet">
+         <string notr="true">font: 700 18pt &quot;Perpetua&quot;;
+color: rgb(162, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>List of techers: </string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTableWidget" name="tableWidget">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(175, 198, 192);
+font: 600 11pt &quot;Segoe UI Semibold&quot;;</string>
+        </property>
+        <property name="editTriggers">
+         <set>QAbstractItemView::NoEditTriggers</set>
+        </property>
+        <column>
+         <property name="text">
+          <string>ID</string>
+         </property>
+         <property name="font">
+          <font>
+           <family>Segoe UI</family>
+           <pointsize>15</pointsize>
+           <italic>false</italic>
+           <bold>true</bold>
+           <underline>false</underline>
+           <strikeout>false</strikeout>
+          </font>
+         </property>
+         <property name="foreground">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>197</red>
+            <green>27</green>
+            <blue>30</blue>
+           </color>
+          </brush>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Name</string>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>15</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="foreground">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>197</red>
+            <green>27</green>
+            <blue>30</blue>
+           </color>
+          </brush>
+         </property>
+        </column>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item alignment="Qt::AlignLeft">
+       <widget class="QLineEdit" name="search">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="searchButton">
+        <property name="styleSheet">
+         <string notr="true"> border-style: outset;
+     border-width: 1.5px;
+     border-radius: 15px;
+     border-color: beige;
+     font: bold 4px;
+     min-width: 2em;
+     padding: 6px;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_3">
+        <property name="styleSheet">
+         <string notr="true">font: 900 11pt &quot;Segoe UI Black&quot;;
+border-radius: 15px;
+margin-left: 10px; border-radius: 15px; background: rgba(49, 45, 52, 253); color: #4A0C46;
+color : white;
+ border-style: outset;
+     border-width: 2px;
+     border-radius: 15px;
+     border-color: beige;
+     font: bold 13px;
+     min-width: 4em;
+     padding: 5px;</string>
+        </property>
+        <property name="text">
+         <string>add/edit</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="remove_button">
+        <property name="styleSheet">
+         <string notr="true">font: 900 11pt &quot;Segoe UI Black&quot;;
+border-radius: 15px;
+margin-left: 10px; border-radius: 15px; background: rgba(49, 45, 52, 253); color: #4A0C46;
+color : white;
+ border-style: outset;
+     border-width: 2px;
+     border-radius: 15px;
+     border-color: beige;
+     font: bold 13px;
+     min-width: 4em;
+     padding: 5px;</string>
+        </property>
+        <property name="text">
+         <string>remove</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton">
+        <property name="styleSheet">
+         <string notr="true">font: 900 11pt &quot;Segoe UI Black&quot;;
+border-radius: 15px;
+margin-left: 10px; border-radius: 15px; background: rgba(49, 45, 52, 253); color: #4A0C46;
+color : white;
+ border-style: outset;
+     border-width: 2px;
+     border-radius: 15px;
+     border-color: beige;
+     font: bold 13px;
+     min-width: 4em;
+     padding: 5px;</string>
+        </property>
+        <property name="text">
+         <string>view</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>teacherview</class>
+ <widget class="QDialog" name="teacherview">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>490</width>
+    <height>451</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="styleSheet">
+        <string notr="true">font: 700 18pt &quot;Perpetua&quot;;
+color: rgb(162, 0, 0);</string>
+       </property>
+       <property name="text">
+        <string>ID</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="QID">
+       <property name="styleSheet">
+        <string notr="true">font: 700 18pt &quot;Perpetua&quot;;
+color: rgb(0, 0, 0);</string>
+       </property>
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="styleSheet">
+        <string notr="true">font: 700 18pt &quot;Perpetua&quot;;
+color: rgb(162, 0, 0);</string>
+       </property>
+       <property name="text">
+        <string>Name</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="QName">
+       <property name="styleSheet">
+        <string notr="true">font: 700 18pt &quot;Perpetua&quot;;
+color: rgb(0, 0, 0);</string>
+       </property>
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QLabel" name="label_6">
+     <property name="styleSheet">
+      <string notr="true">font: 700 18pt &quot;Perpetua&quot;;
+color: rgb(162, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>Professional development</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QTextBrowser" name="textBrowser">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(175, 198, 192);
+font: 600 11pt &quot;Segoe UI Semibold&quot;;</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="label_5">
+     <property name="styleSheet">
+      <string notr="true">font: 700 18pt &quot;Perpetua&quot;;
+color: rgb(162, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>courses taught</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QListWidget" name="listWidget">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(175, 198, 192);
+font: 600 11pt &quot;Segoe UI Semibold&quot;;</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="pushButton">
+     <property name="styleSheet">
+      <string notr="true">font: 900 11pt &quot;Segoe UI Black&quot;;
+border-radius: 15px;
+margin-left: 10px; border-radius: 15px; background: rgba(49, 45, 52, 253); color: #4A0C46;
+color : white;
+ border-style: outset;
+     border-width: 2px;
+     border-radius: 15px;
+     border-color: beige;
+     font: bold 13px;
+     min-width: 4em;
+     padding: 5px;</string>
+     </property>
+     <property name="text">
+      <string>close</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
